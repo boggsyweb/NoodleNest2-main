@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Noodle Nest</title>
+       <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">    
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Noodle Nest</h1>
+                <h2>Comfort in a Bowl</h2>
+            </header> 
+            <main>
+                <div class="menu" id="menu">
+
+                </div>
+                <div class="order-div display-none">
+                    <div class="your-order">
+                        <h1>Your Order</h1>
+                        <img src="images/bird.png" alt="drawing of a bird">
+                    </div>
+                    <div class="order-details">
+                        
+                    </div>
+                    <div class="total-price"></div>
+                    <button class="complete-order" id="complete-order">Complete Order</button>
+                </div>
+                <div  id="order-thanks" class="order-thanks display-none">        
+                </div>
+            </main>
+            <div class="checkout-modal display-none" id="checkout-modal">
+                    <form id="finalise-order">
+                        <button id="modal-close">edit order</button>
+                        <h1>Enter card details</h1>
+                        <input type="text" name="fullName" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="youname@email.com" required>
+                        <input type="text" name="cardNumber" placeholder="0000 0000 0000 0000" pattern="[0-9\s]{13,19}" maxlength="16" required>
+                        <input type="text" name="CVV" placeholder="000" maxlength="3"
+                        minlength="3" required>
+                        <button type="submit" id="payBtn">Pay</button>
+                    </form>
+            </div>
+        </div> 
+	    <script src="index.js" type="module"></script>
+    </body>
+</html>
+
